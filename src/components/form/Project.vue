@@ -39,7 +39,7 @@
             <div class="form-input">
                 <label class="label">Team Size</label>
                 <p class="control">
-                  <input class="input" type="number" placeholder="0" v-model="project.team_size">
+                  <input class="input" oninput="validity.valid||(value='')" min="1" type="number" placeholder="0" v-model="project.team_size">
                 </p>
             </div>
 
